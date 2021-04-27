@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Forms to organise information and gather user input -->
+    <!-- Method = how the information is passed to the sever
+            GET = appends the information of the form to the url 
+            POST = appends the information of the form to the body-->
+    <!-- ACtion = Where I want my information to go .. server location-->
+    <form method= "GET" action="">
+        <input type="text" name="username" placeholder="Enter your name here"/> <br>
+        <input type="password" name="password" placeholder="Enter your password"/> <br>
+
+        <!-- Three input types which change users keyboard type - good thing to think about mobile responsiveness -->
+        <input type="tel" pattern="[0-9]{11,13}" placeholder="Phone number"/> <br>
+        <input type="email" name="email" placeholder="enter your email"/> <br>
+        <input type="url" name="url" placeholder="What is your github?"/> <br>
+
+        <input type="date"/> <br>
+
+        <!-- Checkbox and a radio button -->
+        <p>What is you gender? (select one)</p>
+        <input type="radio" name="gender" value="male">Male</input>
+        <input type="radio" name="gender" value="female">Female</input>
+        <input type="radio" name="gender" value="prefer not to say">PNTS</input>
+        <br>
+
+        <p>What is your favourite food?</p>
+        <input type="checkbox" name="fave" value="chicken">chicken</input>
+        <input type="checkbox" name="fave" value="chocolate">chocolate</input>
+        <input type="checkbox" name="fave" value="rice">rice</input>
+        <input type="checkbox" name="fave" value="orange">orange</input>
+        <br>
+
+
+        <select name="Cars">
+            <option value="default">Please select:</option>
+            <option value="merc">mercesdes</option>
+            <option value="audi">audi</option>
+            <option value="bmw">bmw</option>
+        </select>
+
+
+        <input list="animals">
+        <datalist id="animals">
+            <option value="dog"></option>
+            <option value="donkey"></option>
+            <option value="cat"></option>
+            <option value="horse"></option>
+        </datalist>
+
+
+
+        <button type="submit">Submit Form</button> 
+        <button type="reset">Clear Values</button>
+    </form>    
+
+
+</body>
+</html>
