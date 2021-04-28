@@ -1,0 +1,161 @@
+HTML is the skeleton code
+CSS makes it look nice
+JavaScript makes it interactive
+
+
+Java script allows a developer to:
+    Improve UX
+    Change from static -> interactive
+
+JS Advantages:
+    Speed - JS compiled on the client browser so it can be run straight away
+    Simplicity - JS is relatively simple to learn and implement
+    Versatility - JS can be used to create both the frontend and the backend of a website
+
+JS Limitations:
+    JavaScript compiles on the browser, meaning that if the end user has JavaScript disabled then they 
+    cannot use the website. 
+    As JavaScript compiles on the browser then there are some security concerns
+    for some users - sending viruses and other malicious things.
+    Browser support - JS is sometimes interpreted differently by different browsers. Client-side scripts can be a little unpredictable meaning that 
+    testing is key and needs to be checked across all major browsers
+
+console.log();
+    This is a function in JS which can be used to print any kind of variable defined before, in it or print any messages to the console.
+    4 types:
+        console.log();
+        console.info();
+        console.warn();
+        console.error();
+
+
+JS is imported into a file via. the script. The script by convention is placed just before 
+the end of the closing body tag and uses a ref attribute to link to the JS file.
+
+Declaring variables -
+    use "let" and "const" to declare variables:
+        let y = "";
+        let y;
+        const w = "value";
+    
+    variable conventions:
+        start with a letter, '_' or '$'
+        can include digits
+        case sensitive
+        cannot use reserved words
+        camelCase for names
+    
+    JS types
+        Dynamically typed
+            data types are not declared and not known until runtime
+            varibles can mutate
+        interpreted 
+            stored as text
+            interpreted into machine instructions and stored in memory as the program runs
+    
+    Primitive and Object types  
+    JS can hold two types   
+        Primitive   
+            immutable pieces of data
+            stored in the location the variable accesses
+            fixed length
+            quick to look up 
+        Object  
+            collection of properties
+            values stored in the variables is a reference to the object in memory
+            object are mutable
+
+    Undefined variables have never been initialised
+    null is an explicit keyword that tells the runtime it is `empty` - is a value we can assign to represent objects that don't exist
+
+    JS data types   
+        number - for numbers of any kind
+        bigint - integer values larger than (a very large number) or less than (a very large negative number)
+        string - zero or more characters
+        boolean - true or false 
+        null - for unknown values 
+        undefined - for unassigned values
+        object - store collections of data and more complex entities
+        symbol - used to create unique indentifiers for objects
+
+ASI - Automatic Semi-Colon insertion
+    Code termination is optional in JS - semi-coloons aren't required at the end of each statement.
+    Best practise states that we must insert semi-colons where neccessary.
+
+    Automatically insertion occurs when
+        two lines are seperated by a line terminator
+        two statements are seperated by a closing brace
+        line terminator follows a break, return, throw or continue
+
+Strict mode -
+Is a literal expression introduced in QCMAScript5 which is used to indicate that the code should be executed in "strict mode"
+    Why use strict mode?
+        makes it easier to wrtie "secure" JS
+        strict mode changes previously accepted "bad syntax" into real errors
+        example - in normal JS mistyping a variable name creates a new global variable but in strict mode this will throw an error
+        any assignment to a non-writeable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object will throw an error.
+The "use strict" is only recognized at the beginning of the script or a function
+    Declaring strict - 
+        declare "use strict" at the start of the JS document"
+    Not available in strict -
+        using a variable without declaring it
+        using an object without declraring it
+        deleting a variable or object
+        deleting a function
+        duplicating a parameter name
+        octal numeric literal
+        octal escape characters
+        writing to read-only property
+        writing to get-only property
+    Words not used for naming in strict - 
+        eval
+        Arguments
+        With 
+        eval() not allowed to create a variable in the from which it is called
+        this keyword behaves differently
+        this refers to the object that called the function
+            if the object is not specified, strict mode will return undefined
+    Keywords reserved 
+        implements 
+        interface
+        let
+        package
+        private
+        protected
+        public
+        static
+        yield
+
+Conditionals with truthy/falsey
+    JS variables are loosely/dynamically typed; therefore the language doesn't care how a value is declared nor changed.
+    Each value has an inherent boolean value generally knwon as either truthy or falsey.
+
+    All values are TRUTHY unless they are defined as FALSEY 
+    
+    Checking for equality and type 
+        using "==" only the values are checked because JS converts each string representation before comparison
+        using "===" (strictly equal operator) we check both the type and the value
+
+
+Objects -
+    an object can be defined as an unorderd collection of related data, of primitive or reference types in the form of key:value pairs
+    an object is a reference data type
+
+Arrays -
+    holds a set of related data - for example students in a class
+    in JS have some idiosyncrasies:
+        can be resized at any time
+        index at 0
+        sparsely filled
+        unassigned parts of an array are undefined
+        they can be created in short hand using square brackets
+
+JSON
+    Stands for Java Script Object Notation
+    Lightweight data-interchange format:
+        compared to xml
+    
+    simple format   
+        easy for humans to read and write 
+        easy for machines to parse and generate
+    

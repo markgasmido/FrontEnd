@@ -1,0 +1,74 @@
+//simple console.log() statement
+console.log("Hello World");
+
+
+// It is also possible to add multiple objects to a single console.log() statement as shown below.
+var car = "Audi A5 ";
+var myObj = { str: "Just keep logging you are nearly there ", id: 48576 }
+console.info("My first car was a", car, ". The object is:", someObject);
+
+let age;
+typeof (age); // Returns undefined
+
+let userID = null;
+console.log(userID); //returns null
+
+let userID2 = null;
+console.log(userID == undefined); //returns true
+
+// declaring variables
+let myName = "Ollie Tabooger"; //string
+let myNumber = 20; //number
+let myBigInt = 1234567891234567891234567891234567890n; //BigInt
+let myBool = false; boolean
+let myAge = null; //null value
+let dob; //undefined
+let myObject = { firstName: "Felix", lastName: "Cited" }; //object
+
+//strings
+let answer1 = "It's alright";             // Single quote inside double quotes
+let answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes
+let answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes
+
+//numbers - can be written in scientific notation
+let myBigNumber = 123e5; //12300000
+let mySmallNumber = 123e-5; //0.00123
+
+//typeOf example
+let x = "";
+typeof (x);// will return String
+let y = "String";
+typeof (y) // will return string also.
+let z;
+typeof (z) //Will have a value of undefined and a type of undefined.
+let w = null;
+typeof (w);// Will return Object and not of type null as expected.
+let myObj2 = { firstName: "Felix", lastName: "Cited" };
+typeof (myObj2); //Will return Object.
+
+// 'use strict'; - at the start of document declares strict
+
+//IF statement template
+if (condition) { // Boolean operation
+    statement;
+    // value is TRUTHY if condition is met
+} else if  { // Additional OPTIONAL boolean operation
+    statement;
+} else {
+    statement;
+    // value is FALSEY if condition is NOT met
+}
+
+// ternary if
+let now = new Date();
+let greeting = "Good";
+if (now.getHours() > 17) {
+    greeting += " evening.";
+} else {
+    greeting += " day.";
+}
+
+//ternary if 
+syntax: lettibleName = condition ? val1 : val2;
+let now = new Date();
+let greeting = "Good" + (now.getHours() > 17 ? " evening." : " day.");
